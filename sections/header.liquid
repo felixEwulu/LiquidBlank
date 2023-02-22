@@ -15,7 +15,10 @@
   </li>
   {%- if shop.customer_accounts_enabled -%}
   {%- if customer -%}
-  
+  <li>
+   <a href="/account">{{customer.first_name | escape}}</a>
+  </li>
+
  {%- endif -%}
  {%- endif -%}
  </ul>
